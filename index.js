@@ -19,7 +19,7 @@ const mdLinks = (ruta) => new Promise((resolve, reject) => {
 
   });
 
-console.log(mdLinks("./samples/example3.md").then((res) => console.log(res)).catch((err) => console.log(err.message)));
+console.log(mdLinks("./samples/example1.md").then((res) => console.log(res)).catch((err) => console.log(err.message)));
 
 module.exports = {
   mdLinks,
