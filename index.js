@@ -1,6 +1,5 @@
 const app = require("./lib/app.js");
 
-// Aquí vive la función mdLinks
 const mdLinks = (ruta) => new Promise((resolve, reject) => {
     if (!app.esAbsoluta(ruta)) ruta = app.transformarRuta(ruta);
 
@@ -19,7 +18,7 @@ const mdLinks = (ruta) => new Promise((resolve, reject) => {
 
   });
 
-console.log(mdLinks("./samples/example1.md").then((res) => console.log(res)).catch((err) => console.log(err.message)));
+//console.log(mdLinks("./samples/example1.md").then((res) => console.log(res)).catch((err) => console.log(err.message)));
 
 module.exports = {
   mdLinks,
